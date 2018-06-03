@@ -1,10 +1,10 @@
 # ECE143---Music-History-Analysis-of-Users
 
-blah
+The goal of this project is to help predict which music genres are becoming more popular to help artists and producers understand what resonates the most with listeners. We can even understand how these musical trends relate to important demographics in a population such as age and country of origin.  
 
 ## Getting Started
 
-The project contains ______ (blah jupyter notebooks and csv files)
+The project contains the necessary jupyter notebooks and csv files.
 
 ### Prerequisites
 
