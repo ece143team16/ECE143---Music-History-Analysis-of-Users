@@ -1,4 +1,4 @@
-# ECE143---Music-History-Analysis-of-Users
+# ECE143 Music History Analysis of Users
 
 The goal of this project is to help predict which music genres are becoming more popular to help artists and producers understand what resonates the most with listeners. We can even understand how these musical trends relate to important demographics in a population such as age and country of origin.  
 
