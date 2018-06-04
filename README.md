@@ -4,7 +4,7 @@ The goal of this project is to help predict which music genres are becoming more
 
 ## Getting Started
 
-The project contains the necessary jupyter notebooks and csv files.
+The project contains the necessary jupyter notebooks and csv files. However, since most of our files are very large, Gitub does not support uploads of these dataset files. Instead, we host them on our Google Drive link below.
 
 ### Prerequisites
 
