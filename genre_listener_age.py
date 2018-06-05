@@ -1,15 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jun 04 20:06:25 2018
-
-@author: humbe
-"""
-
 import cPickle as pickle
 import pandas as pd
 import numpy as np
 import os
 import gzip
+import tarfile
 
 demographics = pd.read_pickle('demographics.p')
 MBID_dictionary = pickle.load( open( "MBID_dictionary.p", "rb" ) )
@@ -107,16 +101,6 @@ def average_user_age_genre(filename,genres):
                         tags_age[key][month_str[month_counter]].append(age)
                     
                 month_counter += 1
+                
+    os.chdir(main)
     return tags_age
-#    tags_average_age = {}
-#    for tag in genre:
-#        tags_average_age[tag] = np.zeros(12)
-        
-#    for genre in tags_age:
-#        month_counter = 0
-#        for month in tags_age[genre]:
-            
-average_user_age_genre('MLHD_000.tar',['rock'])
-
-        
-    
