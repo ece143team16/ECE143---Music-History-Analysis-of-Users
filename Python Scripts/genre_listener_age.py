@@ -9,7 +9,41 @@ demographics = pd.read_pickle('demographics.p')
 MBID_dictionary = pickle.load( open( "MBID_dictionary.p", "rb" ) )
 
 def average_user_age_genre(filename,genres):
+    '''
+    Looks inside a the .tar file of the MLHD data set. Unzips the folder and 
+    looks through the list of folders. It will then check the users for the genres
+    specified in the the list 'genres' and identify there age. We do this for all
+    the users in the .tar file.
+    
+    Parameter: filename
+    Type: str
+    e.g. 'MLHD_000.tar'
+    
+    Parameter: genres
+    Type: list
+    e.g. genres = ['pop','hiphop','rock']
+    
+    Assertions:
+        - filename must be str
+        - genres must be a list of strings.
+        - filename must refer to MLHD data set and be .tar file.
+        - Specified file must be in the current directory.
+        
+    '''
+    assert isinstance(filename,str), 'Warning! Filename must be a string!'
+    assert isinstance(genres, list), 'Warning! genres must be a list of strings!'
+    assert filename[0:4] == 'MLHD', 'Warning! Specified file must be from the MLHD dataset!'
+    assert filename[-4:] == '.tar', 'Warning! Must be a .tar file from the MLHD dataset!'
+    
+    assert os.path.isfile('MLHD_00.tar'), 'Warning! Specified .tar file must be in current directory.'
+    for genre in genres:
+        assert isinstance(genre,str), 'Warning! genres list must contain strings only!'
+        
+    genres_lower_case = [x.lower() for x in genres]
+    genres = genres_lower_case    
+    
     main = os.getcwd()
+    
     path = os.getcwd() + '\\' + filename[:-4]
     
     if not os.path.exists(path):
@@ -116,3 +150,8 @@ def average_user_age_genre(filename,genres):
         tag_average[tag] = array
     
     return tag_average
+            
+print average_user_age_genre('MLHD_000.tar',['rock','pop','hiphop','jazz'])
+
+        
+    
