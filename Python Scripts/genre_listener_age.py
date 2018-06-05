@@ -35,7 +35,7 @@ def average_user_age_genre(filename,genres):
     assert filename[0:4] == 'MLHD', 'Warning! Specified file must be from the MLHD dataset!'
     assert filename[-4:] == '.tar', 'Warning! Must be a .tar file from the MLHD dataset!'
     
-    assert os.path.isfile('MLHD_00.tar'), 'Warning! Specified .tar file must be in current directory.'
+    assert os.path.isfile(filename), 'Warning! Specified .tar file must be in current directory.'
     for genre in genres:
         assert isinstance(genre,str), 'Warning! genres list must contain strings only!'
         
