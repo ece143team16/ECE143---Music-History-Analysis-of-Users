@@ -144,14 +144,11 @@ def average_user_age_genre(filename,genres):
         for month in tags_age[tag]:
             summation = sum(tags_age[tag][month])
             length = len(tags_age[tag][month])
-            array[month_counter] += summation/length
+            if not(length == 0):
+                array[month_counter] += summation/length
+                
             month_counter += 1
             
         tag_average[tag] = array
     
     return tag_average
-            
-print average_user_age_genre('MLHD_000.tar',['rock','pop','hiphop','jazz'])
-
-        
-    
