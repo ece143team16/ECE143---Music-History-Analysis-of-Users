@@ -116,7 +116,6 @@ def average_user_age_genre(filename,genres):
                 seen[tag] = False
             month_counter = 0
             for month in months_of_2011:
-#                print month
                 if not(month.empty):
                     rows = month.shape[0]
                     row_counter = 0
@@ -152,3 +151,5 @@ def average_user_age_genre(filename,genres):
         tag_average[tag] = array
     
     return tag_average
+
+average_data = average_user_age_genre('MLHD_000.tar',['kpop', 'hiphop', 'rock', 'pop', 'jazz', 'disco'])
