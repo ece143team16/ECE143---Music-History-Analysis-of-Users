@@ -1,3 +1,12 @@
+'''
+This code is a demonstration of how to remove empty rows in a user's data set.
+It looks inside a folder called '\User History' for the unzipped .txt files for
+the users. It then looks inside this directory and begins to iterate over all
+the files in the folder. We open the user's data as a pandas dataframe. We then
+drop some of the columns we don't need. What is left is the UTC time stamp and
+the artist MBID. Then we write into a .csv file into the new directory for each 
+user. 
+'''
 import os
 import pandas as pd
 #os.getcwd() returns a string for the current directory.
