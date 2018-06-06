@@ -10,7 +10,7 @@ The project contains the necessary jupyter notebooks and csv files. However, sin
 
 We used the Music Listening History Dataset (MLHD) and the MusicBrainz dataset. The MLHD dataset contains ~570k files per user with one log per line in each file. Each log is a quadruple <timestamp, artist-MBID, release-MBID, recording-MBID>.
 
-The MusicBrainz dataset can be found in http://ftp.musicbrainz.org/pub/musicbrainz/data/fullexport/. Navigate to and download mbdump.tar.bz2 and extract. Be advised that this list is updated daily.
+The MusicBrainz dataset can be found in http://ftp.musicbrainz.org/pub/musicbrainz/data/fullexport/. Navigate to the most recent updated folder and download mbdump.tar.bz2 and extract. Be advised that this list is updated weekly so the folder name changes frequently.
 
 
 
