@@ -1,3 +1,13 @@
+'''
+This code was used for extracting the years 2011 from the folder 'UserHisNonEmpty'
+folder which was created by the nonempty_rows.py python code file.
+
+It creates a new directory called \UserHistory2011 and looks inside the 'UserHisNonEmpty'
+folder. It looks at the UTC time stamp of the codes and gets only the rows that belong
+to the year 2011. It then outputs the new tables as .csv files in the folder 
+\UserHistory2011. These new files can be found in the teams Google Drive under
+the folder 'UserHistory2011'.
+'''
 import os
 import pandas as pd
 
