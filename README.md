@@ -14,7 +14,9 @@ The MusicBrainz dataset can be found in http://ftp.musicbrainz.org/pub/musicbrai
 
 ### Jupyter Notebook Setup
 
-blahblah
+To run all the scripts, set up the Jupyter notebook as this:
+
+![alt text](https://github.com/ece143team16/ECE143---Music-History-Analysis-of-Users/blob/master/Images/Jupyter%20Setup.png)
 
 
 
