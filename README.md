@@ -27,6 +27,10 @@ To run all the scripts, set up the Jupyter notebook as this:
 
 https://drive.google.com/drive/u/2/folders/0AH5Rly84R7TjUk9PVA
 
+### Presentation Link
+
+https://docs.google.com/presentation/d/1NjPvdh9WsMKie4uyfzyCRKIFnBmXPsUZzOVHSUxUaYI/edit#slide=id.g3bb1548e77_0_5
+
 ## Authors
 
 * **Erik Seetao** 
