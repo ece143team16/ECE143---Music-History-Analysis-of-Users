@@ -5,6 +5,9 @@ import os
 import gzip
 import tarfile
 
+assert os.path.isfile('MBID_dictionary.p'), 'Warning! MBID_dictionary.p must be in current directory!'
+assert os.path.isfile('demographics.p'), 'Warning! demographics.p must be in current directory!'
+
 demographics = pd.read_pickle('demographics.p')
 MBID_dictionary = pickle.load( open( "MBID_dictionary.p", "rb" ) )
 
@@ -22,6 +25,53 @@ def average_user_age_genre(filename,genres):
     Parameter: genres
     Type: list
     e.g. genres = ['pop','hiphop','rock']
+    
+    Returns: A dictionary containing the genres as the keys, where each key refers
+            to a twelve element array containing floating point numbers, each
+            containing the average age for the respective month. For example,
+            the 0th element in the array refers to the month of January, and so
+            on.
+            
+    e.g.
+    >>> average_user_age_genre('MLHD_000.tar',
+    ... ['rock','pop','hiphop','jazz','blue','kpop','rap','disco'])
+    ...
+    {'blue': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]), 
+    'kpop': array([24.63636364, 23.96666667, 23.83870968, 23.6969697 , 24.6       ,
+       24.55      , 24.06896552, 23.6969697 , 23.75      , 24.61111111,
+       23.57142857, 24.52380952]), 
+    'jazz': array([25.61132812, 25.42429577, 25.53379549, 25.54651163, 25.46716698,
+       25.675     , 25.45421245, 25.58614865, 25.63979417, 25.86848635,
+       26.29166667, 25.70416667]), 
+    'pop': array([25.1762963 , 25.01551481, 25.00278164, 25.12087912, 25.15789474,
+       25.2828125 , 25.05308465, 25.11618257, 25.10540915, 25.32013201,
+       25.33272395, 25.15082956]), 
+    'disco': array([25.44642857, 25.36808511, 25.39300412, 25.32251908, 25.35251799,
+       25.47239264, 25.32879819, 25.30994152, 25.42284569, 25.85106383,
+       25.96818182, 25.49589041]), 
+    'hiphop': array([25.15064935, 25.17248908, 25.27659574, 25.15384615, 25.11219512,
+       25.18181818, 25.2091954 , 25.21325052, 25.2605042 , 25.10996564,
+       25.2008547 , 25.08839779]), 
+    'rap': array([24.76923077, 24.58892617, 24.59136213, 24.71612903, 24.69784173,
+       24.80345572, 24.62564991, 24.71009772, 24.69306931, 24.81463415,
+       24.89766082, 24.65551181]), 
+    'rock': array([25.12164074, 25.01775956, 25.00681199, 25.10675676, 25.04888268,
+       25.2       , 25.02209945, 25.10176391, 25.10326087, 25.30414747,
+       25.36893204, 25.08189655])}
+    
+    First, it looks for the file in the current directoy. Then once it finds it
+    it opens it in a new directory that's inside the current directory. Each file
+    in the new directory refers to a user's data. Where the name of the file
+    is the user's id in the MLHD data set. We iterate over each user in that directory.
+    First we load it into a pandas dataframe and we process it. We remove keep
+    the non-empty rows and extract the year 2011. Then we create sub-dataframes
+    for each month in the year 2011. If a user listens to a certain genre during
+    a given month, we append there age in the list which is contained under
+    the key for that month in the genre's dictionary. After we have gone through
+    the entire folder, we get the average by adding up all the ages over the number
+    of users for that genre for that given month. We then return a dictionary containing
+    a 12-element array for the year 2011, saved under the key representing that genre.
+    Where each element in the array represents a month from the year 2011.
     
     Assertions:
         - filename must be str
@@ -116,6 +166,7 @@ def average_user_age_genre(filename,genres):
                 seen[tag] = False
             month_counter = 0
             for month in months_of_2011:
+#                print month
                 if not(month.empty):
                     rows = month.shape[0]
                     row_counter = 0
@@ -150,6 +201,4 @@ def average_user_age_genre(filename,genres):
             
         tag_average[tag] = array
     
-    return tag_average
-
-average_data = average_user_age_genre('MLHD_000.tar',['kpop', 'hiphop', 'rock', 'pop', 'jazz', 'disco'])
+    return tag_average    
