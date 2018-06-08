@@ -6,13 +6,15 @@ The goal of this project is to help predict which music genres are becoming more
 
 The project contains the necessary jupyter notebooks and csv files. However, since most of our files are very large, Github does not support uploads of these dataset files. Instead, we host them on our Google Drive link below.
 
-### Prerequisites
+### Datasets
 
 We used the Music Listening History Dataset (MLHD) and the MusicBrainz dataset. The MLHD dataset contains ~570k files per user with one log per line in each file. Each log is a quadruple <timestamp, artist-MBID, release-MBID, recording-MBID>.
 
 The MLHD .tar files can be found in http://bit.ly/MLHD-Dataset.
 
 The MusicBrainz dataset can be found in http://ftp.musicbrainz.org/pub/musicbrainz/data/fullexport/. Navigate to the most recent updated folder and download mbdump.tar.bz2 and extract. Be advised that this list is updated weekly so the folder name changes frequently.
+
+
 
 ### Jupyter Notebook Setup
 
