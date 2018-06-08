@@ -15,11 +15,11 @@ The MLHD .tar files can be found in http://bit.ly/MLHD-Dataset.
 The MusicBrainz dataset can be found in http://ftp.musicbrainz.org/pub/musicbrainz/data/fullexport/. Navigate to the most recent updated folder and download mbdump.tar.bz2 and extract. Be advised that this list is updated weekly so the folder name changes frequently.
 
 ### Clearing Datasets
-artist_scraping.ipynb
+artist_scraping.ipynb 
 ArtistTagMerge.ipynb 
-ECE 143 artist_tag.ipynb
-tag table cleanup.ipynb
-refine_demographics_with_scrobble.ipynb 
+ECE 143 artist_tag.ipynb 
+tag table cleanup.ipynb 
+refine_demographics_with_scrobble.ipynb  
 These notebooks in Notebooks folder extract useful information from original dataset 
 
 For your convenience, Clear Data.ipynb conclude all the codes about clearing datasets and you just need to see it.
