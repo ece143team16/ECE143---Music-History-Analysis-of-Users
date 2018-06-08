@@ -16,7 +16,6 @@ The MusicBrainz dataset can be found in http://ftp.musicbrainz.org/pub/musicbrai
 
 ### Clearing Datasets
 artist_scraping.ipynb
-
 ArtistTagMerge.ipynb 
 ECE 143 artist_tag.ipynb
 tag table cleanup.ipynb
