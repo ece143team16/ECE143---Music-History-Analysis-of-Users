@@ -25,8 +25,8 @@ These notebooks in Notebooks folder extract useful information from original dat
 For your convenience, Clear Data.ipynb conclude all the codes about clearing datasets and you just need to see it.
 
 ### Do statistics and plot
-nonempty_rows.py, 
-get_year_2011.py, 
+nonempty_rows.py,  
+get_year_2011.py,  
 genre_listener_country.py, 
 genre_listener_age.py, 
 Demographics.ipynb,  
