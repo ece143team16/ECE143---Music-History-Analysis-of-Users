@@ -19,7 +19,8 @@ artist_scraping.ipynb,
 ArtistTagMerge.ipynb,  
 ECE 143 artist_tag.ipynb,  
 tag table cleanup.ipynb,  
-refine_demographics_with_scrobble.ipynb.   
+refine_demographics_with_scrobble.ipynb,  
+Clear Data.ipynb.  
 These notebooks in Notebooks folder extract useful information from original dataset 
 
 For your convenience, Clear Data.ipynb conclude all the codes about clearing datasets and you just need to see it.
