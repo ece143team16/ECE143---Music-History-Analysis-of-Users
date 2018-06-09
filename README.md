@@ -4,7 +4,7 @@ The goal of this project is to help predict which music genres are becoming more
 
 ## Getting Started
 
-The project contains the necessary jupyter notebooks and csv files. However, since most of our files are very large, Github does not support uploads of these dataset files. Instead, we host them on our Google Drive link below.
+The project contains the necessary Python source files and .csv files. However, since most of our files are very large, Github does not support uploads of these dataset files. Instead, we host them on our Google Drive link below.
 
 ### Datasets
 
@@ -14,7 +14,9 @@ The MLHD .tar files can be found in http://bit.ly/MLHD-Dataset.
 
 The MusicBrainz dataset can be found in http://ftp.musicbrainz.org/pub/musicbrainz/data/fullexport/. Navigate to the most recent updated folder and download mbdump.tar.bz2 and extract. Be advised that this list is updated weekly so the folder name changes frequently.
 
-### Clearing Datasets
+### Structure of source files 
+
+#### Clearing Datasets
 artist_scraping.ipynb,  
 ArtistTagMerge.ipynb,  
 ECE 143 artist_tag.ipynb,  
@@ -25,7 +27,7 @@ These notebooks in Notebooks folder extract useful information from original dat
 
 For your convenience, Clear Data.ipynb conclude all the codes about clearing datasets and you just need to see it.
 
-### Do statistics and plot
+#### Doing statistics and plotting graphs
 nonempty_rows.py,  
 get_year_2011.py,  
 genre_listener_country.py, 
@@ -37,14 +39,15 @@ plot_listeners_vs_age_for_genres.ipynb,
 plot_artists_vs_time_for_genres.ipynb.  
 These python notebooks and scripts do statistics and plot corresponding images, which are stored in Images folder.
 
-### Jupyter Notebook Setup
+### How to run the code
 
-To run all the scripts, set up the Jupyter notebook similar to this:
+To run all the scripts, download zip file of this repository, and uncompress and upload all folder and files to Jupyter Notebook. Jupyter notebook will look like this:
 
 ![alt text](https://github.com/ece143team16/ECE143---Music-History-Analysis-of-Users/blob/master/Images/Jupyter%20Setup2.png)
 
+Next clear datasets. Run Clear Data.ipynb in Notebooks folder to clear datasets.
 
-
+Finally, do statistics and plot graphs. Run all the the source files for doing statistics and plotting graphs
 
 
 
