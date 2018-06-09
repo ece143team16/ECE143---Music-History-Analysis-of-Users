@@ -41,7 +41,7 @@ These python notebooks and scripts do statistics and plot corresponding images, 
 
 To run all the scripts, set up the Jupyter notebook similar to this:
 
-![alt text](https://github.com/ece143team16/ECE143---Music-History-Analysis-of-Users/blob/master/Images/Jupyter%20Setup.png)
+![alt text](https://github.com/ece143team16/ECE143---Music-History-Analysis-of-Users/blob/master/Images/Jupyter%20Setup2.png)
 
 
 
