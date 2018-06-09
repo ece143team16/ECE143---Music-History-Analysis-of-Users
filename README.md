@@ -28,11 +28,11 @@ For your convenience, Clear Data.ipynb conclude all the codes about clearing dat
 nonempty_rows.py,  
 get_year_2011.py,  
 genre_listener_country.py, 
-genre_listener_age.py, 
+genre_listener_age.py,  
 Demographics.ipynb,  
-plot_genre_listener_country.ipynb, 
-plot_artists_vs_time_for_genres.ipynb, 
-plot_listeners_vs_age_for_genres.ipynb, 
+plot_genre_listener_country.ipynb,  
+plot_artists_vs_time_for_genres.ipynb,  
+plot_listeners_vs_age_for_genres.ipynb,  
 plot_artists_vs_time_for_genres.ipynb.  
 These python notebooks and scripts do statistics and plot corresponding images, which are stored in Images folder.
 
